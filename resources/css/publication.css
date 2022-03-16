@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: rgba(179, 177, 177, 0.103);
+    margin-bottom: 20px;
+}
+
+.form-step {
+    display: none;
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    form {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.form-step-active {
+    margin-top: 20px;
+    display: block;
+}
+
+.form {
+    width: clamp(30%, 90%, 70%);
+    margin: 0 auto;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    background: rgba(153, 71, 4, 0.062);
+}
+
+.progresse-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 3rem 0;
+}
+
+.progresse-bar::before,
+.progresse {
+    content: "";
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progresse {
+    background-color: rgb(247, 118, 14);
+    width: 0%;
+    transition: 0.2s;
+}
+
+.progresse-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progresse-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progresse-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(80% + 0.70rem);
+    font-size: 0.80rem;
+}
+
+.progresse-bar-active {
+    background-color: rgba(252, 113, 0, 0.932);
+    color: rgb(2, 59, 97);
+}
+
+.titre {
+    font-size: 20px;
+}
+
+label .lablel {
+    font-size: 12;
+}
+
+.soustitre {
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+.part {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.marge {
+    margin-top: 20px;
+}
+
+input,
+select {
+    display: block;
+    border: 1px solid rgba(252, 113, 0, 0.932);
+    background: #fff;
+    border-radius: 5px;
+    padding: 8px 8px;
+    width: 60%;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.width-5O {
+    width: 50%;
+}
+
+.ml-auto {
+    margin: auto;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 0.75rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: rgb(247, 118, 14);
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0 0 0 3px rgb(247, 118, 14);
+}
+
+.btns {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}

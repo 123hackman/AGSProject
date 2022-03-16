@@ -1,0 +1,49 @@
+    .cardPrinc {
+        background-color: rgb(207, 103, 5);
+        color: white;
+        position: relative;
+    }
+    
+    .imgProfil {
+        text-align: center;
+        margin-top: 0;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: rgba(85, 84, 84, 0.74);
+    }
+    
+    input[type="file"] {
+        display: none;
+    }
+    
+    .cardform {
+        border-radius: 2px solid #000;
+    }
+    
+    .cardB {
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+        width: 200px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: 0 7px 25px rgba(49, 49, 48, 0.932);
+    }
+    
+    .cardB:hover {
+        color: white;
+        background-color: rgb(207, 103, 5);
+    }
+    
+    .active {
+        color: white;
+        background-color: rgb(207, 103, 5);
+    }

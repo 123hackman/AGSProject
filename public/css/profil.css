@@ -1,0 +1,8 @@
+.profil {
+    text-align: center;
+    margin-top: 0;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgba(85, 84, 84, 0.74);
+}

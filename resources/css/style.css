@@ -1,0 +1,113 @@
+.body {
+    background: rgba(252, 113, 0, 0.932);
+    background-size: 100%;
+    margin-left: 10%;
+}
+
+.cont .left {
+    width: 85%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    position: relative;
+    padding: 40px;
+}
+
+.cont .left form h3 {
+    font-size: 1.8em;
+    color: rgba(252, 113, 0, 0.932);
+}
+
+.cont .left form {
+    width: 90%;
+    margin: 5%;
+}
+
+.cont .left input {
+    border: 1px solid rgba(252, 113, 0, 0.932);
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.cont .left button {
+    border: 1px solid rgba(252, 113, 0, 0.932);
+    background: linear-gradient(to right, rgb(153, 70, 3), rgb(247, 118, 14));
+    border-radius: 8px;
+    padding: 10px 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cont .left label {
+    font-style: bold;
+}
+
+.cont .left p {
+    text-align: center;
+}
+
+.cont .left form a {
+    color: rgba(252, 113, 0, 0.932);
+    font-size: 18px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+/*case a cocher */
+
+#remember {
+    float: left;
+    margin-top: 6px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10px;
+    background: rgba(122, 121, 121, 0.295);
+    transition: 0.5s;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    box-shadow: inset 0 4px 30px rgb(122, 121, 121), inset 0 4px 4px rgb(122, 121, 121), inset 0 -2px 2px rgb(122, 121, 121),
+}
+
+#remember .indicateur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: rgba(252, 113, 0, 0.932);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 2px 8px rgba(252, 113, 0, 0.932), inset 0 1px 1px rgba(173, 80, 4, 0.548) inset 0 -1px 1px rgba(173, 80, 4, 0.548);
+    transition: 0 .5s;
+}
+
+#remember.active {
+    background: rgba(252, 113, 0, 0.932);
+}
+
+#remember.active .indicateur {
+    left: 20px;
+    background: #fff;
+}
+
+.container .left form .a p {
+    margin-left: 45px;
+}
+
+.a {
+    display: inline-block;
+}
